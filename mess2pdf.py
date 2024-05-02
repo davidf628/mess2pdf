@@ -216,7 +216,7 @@ if len(duplicatepdfs) > 0:
             try:
 
                 # Write the group of files to a single PDF
-                merger = PdfFileMerger()
+                merger = PdfFileMerger(strict=False)
                 for pdf in pdfs:
                     merger.append(pdf)
 
