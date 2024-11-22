@@ -114,7 +114,7 @@ if platform.system() == 'Windows':
         if input("\nOkay to convert these to PDF [Y\\n]? ") == 'Y':
             for fileid in toConvert:
                 if ATWORK:
-                    exefile = 'c:\\Users\\davidflenner\\bin\\magick.exe'
+                    exefile = 'magick'
                 else:
                     exefile = "magick"
                 evt = subprocess.run([exefile, f'{fileid.fname}', f'{fileid.getpdfname()}'], 
